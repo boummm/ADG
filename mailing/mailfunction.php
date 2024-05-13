@@ -8,7 +8,7 @@ require 'mailingvariables.php';
 
 function mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $attachment = false){
 
-    $mail = new PHPMailer();
+    $mail = new PHPMailer(true);
     $mail->isSMTP();
 
     //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
@@ -17,7 +17,7 @@ function mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $att
 
     $mail->Port = $GLOBALS['mail_port'];
 
-    $mail->SMTPSecure = 'ssl';
+    $mail->SMTPSecure = 'tls';
 
     $mail->SMTPAuth = true;
 
