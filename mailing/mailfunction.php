@@ -17,7 +17,7 @@ function mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $att
 
     $mail->Port = $GLOBALS['mail_port'];
 
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->SMTPSecure = 'tls';
 
     $mail->SMTPAuth = true;
 

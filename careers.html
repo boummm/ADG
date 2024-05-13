@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Company Website</title>
+    <title>ADGジャパン株式会社</title>
     <link rel="stylesheet" href="./css/careers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -21,137 +21,106 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><img src="./images/image.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html#home">home</a></li>
-                <li><a href="index.html#about">about</a></li>
-                <li><a href="index.html#service">services</a></li>
-                <li><a href="index.html#portfolio">portfolio</a></li>
-                <li><a href="index.html#team">team</a></li>
-                <li><a href="careers.html">career</a></li>
-                <li><a href="index.html#contact">contact</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html#about">ADGジャパンについて</a></li>
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="index.html#portfolio">特定技能について</a></li>
+                <li><a href="careers.html">キャリア</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="home">
-        <h2>Home / Careers</h2>
+        <h2>ホーム / キャリア</h2>
     </section>
 
     <section id="career-heading" class="career-heading">
-        <h1 class="heading">Career</h1>
-        <p>Job Opening in IT Company. Apply Now!</p>
+        <h1 class="heading">キャリア</h1>
+        <p>今すぐお申し込み！</p>
     </section>
     <div class="career">
         <div class="career-form">
             <form action="./careers.php" method="POST" enctype="multipart/form-data">
-                <input type="text" name="name" placeholder="Name" class="career-form-txt" required>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="career-form-phone">
-                <input type="email" name="email" placeholder="Email" class="career-form-email" required>
+                <input type="text" name="name" placeholder="名前" class="career-form-txt" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="電話番号" maxlength="10" class="career-form-phone">
+                <input type="email" name="email" placeholder="メール" class="career-form-email" required>
                 <div class="radio-class">
-                    <h2 class="name">Apply For Which Post?</h2>
+                    <h2 class="name">どの仕事に応募しますか?</h2>
                 <label class="radio">
-                  <input class="radio-one" type="radio" checked="checked" name="status" value="Web Designer">
+                  <input class="radio-one" type="radio" checked="checked" name="status" value="機械・金属関係">
                   <span class="checkmark"></span>
-                  Web Designer
+                  機械・金属関係
                 </label>
                 <label class="radio">
-                  <input class="radio-two" type="radio" name="status" value="Web Developer">
+                  <input class="radio-three" type="radio" name="status" value="食品製造関係">
                   <span class="checkmark"></span>
-                  Web Developer
+                  食品製造関係
                 </label>
                 <label class="radio">
-                  <input class="radio-three" type="radio" name="status" value="Mobile App Designer">
+                  <input class="radio-five" type="radio"  name="status" value="家具関係">
                   <span class="checkmark"></span>
-                  Mobile App Designer
-                </label>
-                <label class="radio">
-                    <input class="radio-four" type="radio" name="status" value="Mobile App Developer">
-                    <span class="checkmark"></span>
-                    Mobile App Developer
-                  </label>
-                <label class="radio">
-                  <input class="radio-five" type="radio"  name="status" value="Digital Marketer">
-                  <span class="checkmark"></span>
-                  Digital Marketer
+                  家具関係
                 </label>
                 </div>
-                <input type="number" id="experience" name="experience" required placeholder="Years of Experience" class="career-form-experience">
-                <textarea placeholder="Other Details" name="details" class="career-form-txtarea" required></textarea>
+                <input type="number" id="experience" name="experience" required placeholder="経験年数" class="career-form-experience">
+                <textarea placeholder="自己PR" name="details" class="career-form-txtarea" required></textarea>
                 <div class="file">
-                    <h2 class="name">Upload Your Resume</h2>
+                    <h2 class="name">履歴書をアップロードする</h2>
                     <input class="upload" type="file" name="fileToUpload" accept=".doc,.docx,.pdf"><br><br><br>
                 </div>
-                <input type="submit" value="Submit" name="submit" class="career-form-btn">
+                <input type="submit" value="送信" name="submit" class="career-form-btn">
             </form>
         </div>
     </div>
 
-      <div class="footer">
+    <div class="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>About Us</h4>
+                        <h4>リンク</h4>
                         <ul>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#home">Home</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#about">About us</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#service">Our services</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#home">Terms & condition</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#home">Privacy policy</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html">ホーム</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#about">ADGジャパンについて</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="service.html">サービス</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">キャリア</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#contact">お問い合わせ</a></li>
                         </ul>
                     </div>
-  
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#portfolio">Portfolio</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#team">Team</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#contact">Contact</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#faq">FAQ</a></li>
-                        </ul>
-                    </div>
-  
+
                     <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
-                        <h4>Contact Us</h4>
+                        <h4>お問い合わせ</h4>
                         <p>
-                            1300  Center Avenue<br>
-                            Fresno, California<br>
-                            United States <br>
-                            <strong>Phone:</strong> +123-456-7890<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            千葉県市川市曽谷8-2-13<br>
+                            <strong>電話番号:</strong> +123-456-7890<br>
+                            <strong>メール:</strong> adgjapan@gmail.com<br>
                         </p>
-  
+
                         <div class="social-links">
                             <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
                             <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
                             <a href="https://www.linkedin.com/"><i class="ion-logo-linkedin"></i></a>
                             <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
-                            <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
+                            <a
+                                href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                    class="ion-logo-googleplus"></i></a>
                         </div>
-  
+
                     </div>
-  
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h4>Subscription</h4>
-                        <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit"  value="Subscribe">
-                        </form>
-                    </div>
-  
+
                 </div>
             </div>
         </div>
-  
+
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
-                    Copyright &copy; 2021 IT Company Website. All Rights Reserved.
+                    Copyright &copy; 2021 ADGジャパン株式会社. All Rights Reserved.
                 </div>
             </div>
         </div>
